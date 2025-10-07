@@ -1,6 +1,18 @@
+import mikuData from "./mikuData.js";
+import Artist from "./components/Artist.jsx";
+
 export default function App() {
-  return(
-    <h1>Well MIku</h1>
+
+  const artistElements = mikuData.map((data) => {
+    <Artist entry={data} />
+  })
+
+  return (
+    <>
+      <h1>Well MIku</h1>
+      {artistElements}
+    </>
+
   )
 }
 
