@@ -12,7 +12,5 @@ export default function App() {
       <h1>Well MIku</h1>
       {artistElements}
     </>
-
-  )
+  );
 }
-
