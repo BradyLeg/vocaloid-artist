@@ -1,20 +1,31 @@
+import { useState } from "react";
 import mikuData from "./mikuData.js";
 import Artist from "./components/Artist.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 
-export default function App() {
 
-  const artistElements = mikuData.map((data) => (
-    <Artist key={data.id} entry={data} />
-  ));
+export default function App() {
+  const [showGrid, setShowGrid] = useState(false);
+
+  const toggleGrid = () => setShowGrid((prev) => !prev);
 
   return (
     <>
-      <Header />
-      <h1>Well MIku</h1>
-      {artistElements}
+      <Header toggleGrid={toggleGrid} showGrid={showGrid} />
+
+      <h1>Well Miku</h1>
+
+      {mikuData.map((artist) => (
+        <Artist
+          key={artist.id}
+          entry={artist}
+          showGrid={showGrid} // Passing down as props
+        />
+      ))}
+
       <Footer />
     </>
   );
 }
+

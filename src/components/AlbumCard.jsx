@@ -1,4 +1,5 @@
 // import "./AlbumCard.css";
+import "../index.css";
 
 export default function AlbumCard( album ) {
   return (
