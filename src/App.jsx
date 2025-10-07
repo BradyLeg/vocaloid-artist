@@ -5,9 +5,9 @@ import Footer from "./components/Footer.jsx";
 
 export default function App() {
 
-  const artistElements = mikuData.map((data) => {
-    <Artist entry={data} />
-  })
+  const artistElements = mikuData.map((data) => (
+    <Artist key={data.id} entry={data} />
+  ));
 
   return (
     <>
