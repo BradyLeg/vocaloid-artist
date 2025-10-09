@@ -13,9 +13,6 @@ export default function App() {
   return (
     <>
       <Header toggleGrid={toggleGrid} showGrid={showGrid} />
-
-      <h1>Well Miku</h1>
-
       {mikuData.map((artist) => (
         <Artist
           key={artist.id}
