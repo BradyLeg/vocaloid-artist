@@ -26,8 +26,7 @@ h1 {
   flex-direction: row;
   text-align: center;
   justify-content: space-around;
-  align-content: center;
-  margin: 10px;
+  align-content: space-around;
   flex-wrap: wrap;
 }
 
