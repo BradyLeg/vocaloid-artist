@@ -6,7 +6,14 @@ export default function Artist(props) {
         <div className="artist-card">
             <h2>{props.entry.name}</h2>
             <CheckData year={props.entry.activeSince} featured={props.entry.activeSince} />
-            <AlbumCard entry={props.entry.albums} />
+            
+            {props.showGrid && (
+                <div className="album-grid">
+                {props.entry.albums.map((album, index) => (
+                    <AlbumCard key={index} entry={album} />
+                ))}
+                </div>
+            )}
         </div>
     )
 }
