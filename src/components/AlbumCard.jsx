@@ -9,7 +9,7 @@ export default function AlbumCard( album ) {
       </div>
 
       {/* {album.tracklist?.length > 0 && (
-        <p className="track-count">{album.entry.tracklist.length} Tracks</p>
+        <p className="track-count">{album.tracklist.length} Tracks</p>
       )} */}
     </div>
   );
