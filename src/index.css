@@ -21,6 +21,10 @@ h1 {
   line-height: 1.1;
 }
 
+.artist-card {
+  background-color: darkslategray;
+}
+
 .album-card {
   display: flex;
   flex-direction: column;
