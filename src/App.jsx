@@ -13,14 +13,15 @@ export default function App() {
   return (
     <>
       <Header toggleGrid={toggleGrid} showGrid={showGrid} />
-      {mikuData.map((artist) => (
-        <Artist
-          key={artist.id}
-          entry={artist}
-          showGrid={showGrid} // Passing down as props
-        />
-      ))}
-
+      <div className="card-conatainer">
+        {mikuData.map((artist) => (
+          <Artist
+            key={artist.id}
+            entry={artist}
+            showGrid={showGrid} // Passing down as props
+          />
+        ))}
+      </div>
       <Footer />
     </>
   );

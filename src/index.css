@@ -21,6 +21,14 @@ h1 {
   line-height: 1.1;
 }
 
+.card-conatainer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .artist-card {
   background-color: darkslategray;
 }
